@@ -1,0 +1,11 @@
+# Support revel routes redirect
+GET    /logout                                          RevAuth.Logout
+POST   /logout                                          RevAuth.Logout
+POST   /login                                           RevAuth.Authenticate
+
+# Return json response
+POST   /api/v1/auth/login                               Auth.Authenticate
+GET    /api/v1/auth/logout                              Auth.Logout
+GET    /api/v1/auth/login-check                         Auth.CheckLogin
+POST   /api/v1/auth/captcha                             Captcha.GetCaptcha
+GET    /api/v1/auth/get-token                           CSRF.GetToken
